@@ -1,0 +1,102 @@
+﻿body {
+    background-image: url('../Images/abejitasBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+}
+
+.form-signin {
+    max-width: 400px;
+    width: 100%;
+    height: 301px;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .form-signin h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        color: black;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    .form-signin input[type="text"],
+    .form-signin input[type="password"] {
+        width: 85%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .form-signin input[type="submit"] {
+        width: 85%;
+        padding: 10px;
+        margin-top: 20px;
+        border-radius: 5px;
+        border: none;
+        background-color: #17a2b8;
+        color: #ffffff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+        .form-signin input[type="submit"]:hover {
+            background-color: #138496;
+        }
+
+.centerdiv {
+    justify-content: center;
+    display: flex;
+}
+
+}
+
+.form-signin p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+    .form-signin p a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+
+        .form-signin p a:hover {
+            text-decoration: underline;
+        }
+
+.animal-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 200px;
+    animation: animal-animation 5s infinite;
+}
+
+@keyframes animal-animation {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}

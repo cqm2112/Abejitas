@@ -1,0 +1,29 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+}
+<link rel="stylesheet" href="~/css/Login.css" />
+<div class="container">
+    <div class="row">
+
+
+        <div class="col-md-6 offset-md-3 centerdiv">
+            <form class="form-signin animated fadeIn" action="@Url.Content("~/Home")" method="post">
+                <h1 class="h3 mb-3">Veterinary Login</h1>
+                @if (ViewBag.Error != null)
+                {
+                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>@ViewBag.Error</strong>
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                }
+                <input type="text" class="form-control" name="field_user" placeholder="User" required>
+                <input type="password" class="form-control" name="field_pass" placeholder="Password" required>
+                <input class="btn btn-primary" type="submit" value="Sign In" />
+            </form>
+            <img class="animal-img" src="~/Images/abejita.png" alt="Animal Image">
+        </div>
+
+    </div>
+</div>
+
