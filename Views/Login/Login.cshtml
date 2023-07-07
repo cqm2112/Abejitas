@@ -9,7 +9,7 @@
 
         <div class="col-md-6 offset-md-3 centerdiv">
             <form class="form-signin animated fadeIn" action="@Url.Content("~/Home")" method="post">
-                <h1 class="h3 mb-3">Veterinary Login</h1>
+                <h1 class="h3 mb-3">Abejitas Login</h1>
                 @if (ViewBag.Error != null)
                 {
                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
@@ -19,7 +19,7 @@
                 }
                 <input type="text" class="form-control" name="field_user" placeholder="User" required>
                 <input type="password" class="form-control" name="field_pass" placeholder="Password" required>
-                <input class="btn btn-primary" type="submit" value="Sign In" />
+                <input class="btn btn-primary" type="submit" value="Iniciar" />
             </form>
             <img class="animal-img" src="~/Images/abejita.png" alt="Animal Image">
         </div>
